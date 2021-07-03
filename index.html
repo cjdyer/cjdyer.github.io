@@ -1,210 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <title>Cory Dyer - CV</title>
-        <link rel="icon" type="image/png" href="./Resources/Icon.png" />
-        <link rel="stylesheet" href="styles.css"/>
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="styles.css">
+   <meta name="description" content="Put desc here">
+   <title>Doc</title>
+</head>
 
-        <script>
-            function SwapDivs(new_div) {
-                d1 = document.getElementById("Home");
-                d2 = document.getElementById("Projects");
-                d3 = document.getElementById("Robotics");
-                d4 = document.getElementById(new_div);
+<body>
+   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1366 768" class="background-container">
+      <defs>
+         <linearGradient id="cloud" x1="0" x2="100%" y1="0" y2="0">
+            <stop offset="50%" stop-color="#ddd"/>
+            <stop offset="50%" stop-color="#fff"/>
+         </linearGradient>
+      </defs>
+      <svg>
+         <path class="birds-dark"  d="M 142, 327  v 12  l  23, -24  Z"/>
+         <path class="birds-light" d="M 142, 327  v 12  l -23, -24  Z"/>
 
-                d1.style.display = d2.style.display = d3.style.display = "none";
-                d4.style.display = "block";
-            }
-        </script>
+         <path class="birds-dark"  d="M 180, 359  v 12  l  23, -24  Z"/>
+         <path class="birds-light" d="M 180, 359  v 12  l -23, -24  Z"/>
 
-    </head>
-    <body>    
-        <div class="divmaster">
-            <div class="divleft">
-                <img src="./Resources/Logo.png" class="logo"/>
-                <button onclick="javascript:SwapDivs('Home')"><span>Home</span></button>
-                <button onclick="javascript:SwapDivs('Robotics')" class="lower"><span>Robotics</span></button>
-                <button onclick="javascript:SwapDivs('Projects')" class="lower"><span>History</span></button>
-                <p class="contact"><span>Contact Me: <br> cjdyer0@gmail.com <br> 0223099151 </span></p>
-            </div>
-            <div class="divright">
-                <div id="Home" class="homepage" style="display: block;">
-                    <div class="header">
-                        <p class="headertext">Cory Dyer</p>
-                        <p class="headertext" style="font-size: 30pt;">Curriculum vitae</p>
-                    </div>
-                    <div class="content" style="border-bottom: 2px solid black;">
-                        <p>
-                            An extremely driven and creative individual. I am looking for an engineering internship over the 2020/2021 summer period, to finish the second year of my Mechatronics degree at Massey University. Highly proficient in problem solving and the engineering process, with several years experience in robotics. With knowledge of multiple coding languages, circuit design, CAD software and report writing. Having assisted in many volunteering projects along with scattered periods of work, I am committed to learning as much as possible and giving everything I have to any project, work or challenge I am given. 
-                        </p> 
-                    </div>
-                    <div class="content" style="border-bottom: 2px solid black;">
-                        <p style="text-align: center;">Below are a few of my highlights.</p>
-                    </div>
-                    <div class="slideshow">
-                        <div class="slides">
-                            <div class="numbertext">1 / 11</div>
-                            <img src="./Resources/SlideShow/ss (0).png" style="width: 100%;">
-                            <div class="text">All New Zeland Vex Robotics Teams 2018</div>
-                        </div>
-                        <div class="slides">
-                            <div class="numbertext" style="color: white;">2 / 11</div>
-                            <img src="./Resources/SlideShow/ss (1).png" style="width:100%">
-                            <div class="text">Canteen Summer Camp</div>
-                        </div>
-                        <div class="slides">
-                            <div class="numbertext">3 / 11</div>
-                            <img src="./Resources/SlideShow/ss (2).png" style="width:100%">
-                            <div class="text">2019 Excellence Award</div>
-                        </div>
-                        <div class="slides">
-                            <div class="numbertext">4 / 11</div>
-                            <img src="./Resources/SlideShow/ss (3).png" style="width:100%">
-                            <div class="text">Wire Master Logo</div>
-                        </div>
-                        <div class="slides">
-                            <div class="numbertext">5 / 11</div>
-                            <img src="./Resources/SlideShow/ss (4).png" style="width:100%">
-                            <div class="text">Coil Winding User Interface</div>
-                        </div>
-                        <div class="slides">
-                            <div class="numbertext">6 / 11</div>
-                            <img src="./Resources/SlideShow/ss (5).png" style="width:100%">
-                            <div class="text">College Leaver Awards</div>
-                        </div>
-                        <div class="slides">
-                            <div class="numbertext">7 / 11</div>
-                            <img src="./Resources/SlideShow/ss (6).png" style="width:100%">
-                            <div class="text">Component Topology Optimization</div>
-                        </div>
-                        <div class="slides">
-                            <div class="numbertext">8 / 11</div>
-                            <img src="./Resources/SlideShow/ss (7).png" style="width:100%">
-                            <div class="text">2019 Robot on Game Field</div>
-                        </div>
-                        <div class="slides">
-                            <div class="numbertext">9 / 11</div>
-                            <img src="./Resources/SlideShow/ss (8).png" style="width:100%">
-                            <div class="text">Coil Winding Result</div>
-                        </div>
-                        <div class="slides">
-                            <div class="numbertext">10 / 11</div>
-                            <img src="./Resources/SlideShow/ss (9).png" style="width:100%">
-                            <div class="text">Robot Hand CAD (Palm pictured)</div>
-                        </div>
-                        <div class="slides">
-                            <div class="numbertext" style="color: white;">11 / 11</div>
-                            <img src="./Resources/SlideShow/ss (10).png" style="width:100%">
-                            <div class="text">Vex Worlds Venue</div>
-                        </div>
-                    </div>
-                </div>
-                <div id="Robotics" class="page">
-                    <div class="header" style="width: 50%; transform: translateX(40%);">
-                        <p class="headertext">Robotics</p>
-                    </div>
-                    <div class="row">
-                        <p class="headertext" style="font-size: 30pt; text-align: left; border-bottom: 2px solid black;">Promoting and Mentoring</p>
-                        <div class="content" style="margin-left: -10px;">
-                            <p style="margin-bottom: 30px;">
-                                2020 has been my first year of being unable to compete in the Vex robotics competition (due to age). Because of this I was able to put my full effort into mentoring teams and promoting robotics. During the university year I would mentor teams in Palmerston North, most notably, Palmerston North Girls' High School and St. Peters. To promote robotics in the region, I would assist in running the Vex EDR portion of scrimmages, help teams and most importantly talk to local parents and teachers in attendance. This mentoring also extended to teams in the Bay of Plenty region when home from university. I was also able to mentor teams in 2019, along with my own club in years prior.
-                            </p>
-                            <img src="./Resources/Mentoring.png" class="projectimage"/>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <p class="headertext" style="font-size: 30pt; text-align: left; border-bottom: 2px solid black;">Competing</p>
-                        <div class="content" style="margin-left: -10px;">
-                            <p style="margin-bottom: 30px;">
-                                I have been active in New Zealand robotics for nearly 8 years, beginning at Otumoetai Intermediate with Lego NXT and moving into Vex EDR at Otumoetai college. Through robotics I was able to pickup a strong knowledge in coding, building and communication. The following videos and pictures are highlights through my years participating.
-                            </p>
-                            <a href="https://www.nzherald.co.nz/bay-of-plenty-times/news/otumoetai-college-robotics-team-ready-for-world-champs-in-kentucky/756ZQYE5XFH65WZ7VRKP3QDEVQ/">2018 Worlds</a>
-                            <a href="https://www.nzherald.co.nz/nz/students-robot-to-take-on-the-world/DKBLPPWKGWUJSIC2S5SAF6NTUE/">2016 Worlds</a>
-                            <br>
-                            <img class="projectimage" src="./Resources/dave.jpg"/>
-                            <img class="projectimage" src="./Resources/big.jpg"/>
-                            <iframe style="transform: translateX(40%);" width="560" height="315" src="https://www.youtube.com/embed/ln6mYwU3WjM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                            <iframe style="transform: translateX(40%);" width="560" height="315" src="https://www.youtube.com/embed/FTgdHRcPPsw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                            <iframe style="transform: translateX(40%);" width="560" height="315" src="https://www.youtube.com/embed/qRxfWaqRGIo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        </div>
-                    </div>
-                </div> 
-                <div id="Projects" class="page">
-                    <div class="header" style="width: 50%; transform: translateX(40%);">
-                        <p class="headertext">History</p>
-                    </div>
-                    <div class="row">
-                        <p class="headertext" style="font-size: 30pt; text-align: left; border-bottom: 2px solid black;">2020</p>
-                        <div class="content" style="margin-left: -10px;">
-                            <p style="font-weight: bold; padding-top: 20px;">WireMaster, A coil winding system.</p>
-                            <p style="margin-bottom: 30px;">
-                            As part of my university course I was given a semester to work in a team and create a coil winding system. This allowed me to further my skills in teamwork, rapid prototyping and designing to set constraints. Early on in the project I made sure to promote the idea of simple design, allowing my team to focus wholly on creating a tight, precise coil, without worrying about complex concepts. Additionally I pushed for strong project management, thus providing the team with a more structured process and therefore focusing the scope of the problem being solved.
-                            </p>
-                        </div>
-                        <img src="./Resources/WM.png" class="projectimage"/>
-                        <div class="content" style="margin-left: -10px;">
-                            <p style="font-weight: bold; padding-top: 20px;">Hou, Designing for an existing company.</p>
-                            <p style="margin-bottom: 30px;">
-                                The first semester of 2020 was unfortunately shortened due to the COVID-19 virus and is therefore less in-depth than the second semester project. However, my team was still able to complete a report and final idea. We communicated with a representative at Methven to create a saleable product. The final idea was an adjustable showerhead from the bottom of the rail, this is aimed at assisting the elderly and streamlining the shower experience.
-                            </p>
-                        </div>
-                        <img src="./Resources/Methven.png" class="projectimage"/>
-                        <div class="content" style="margin-left: -10px;">
-                            <p style="font-weight: bold; padding-top: 20px;">Coffee n’ Cream, Creating content for a business.</p>
-                            <p style="margin-bottom: 30px;">
-                                In August of 2020 I was approached by the owner of a coffee-cart to create a website and potential logo design. This allowed me to grow my knowledge of working with real people, and achieving the vision they have. 
-                            </p>
-                        </div>
-                        <img src="./Resources/Coffee.png" class="projectimage"/>
-                        <div class="content" style="margin-left: -10px;">
-                            <p style="font-weight: bold; padding-top: 20px;">Work experience.</p>
-                            <p style="margin-bottom: 0px;">
-                                Over the 2019/2020 summer break I worked full time as a storehand at NZ Uniforms. This provided me with valuable real world work experience and enabled me to increase my communication skills. I also worked during the advance voting period of the 2020 elections. Adding further development to my communication skills.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <p class="headertext" style="font-size: 30pt; text-align: left; border-bottom: 2px solid black;">2019</p>
-                        <div class="content" style="margin-left: -10px;">
-                            <p style="font-weight: bold; padding-top: 20px;">University projects.</p>
-                            <p style="margin-bottom: 30px;">
-                                In comparison to the second year, the first year projects were heavily limited in scope and ability to think outside of the box. These projects ensured I had a firm understanding of the engineering process before getting into more advanced projects. As we could not yet select our teams amongst ourselves, this provided a range of different views. I took leadership positions in both semesters teams and focused on applying people to the areas they had strengths in. Allowing my teams to complete projects much faster and more efficiently than other teams. 
-                            </p>
-                        </div>
-                        <img src="./Resources/First year.png" class="projectimage"/>
-                        <div class="content" style="margin-left: -10px;">
-                            <p style="font-weight: bold; padding-top: 20px;">Sygn and Ecoceipt.</p>
-                            <p style="margin-bottom: 30px;">
-                                During 2019 I was able to be involved in two large coding projects. The first of which, Sygn, was a multipurpose artificial intelligence framework. Sygn began as a side project during robotics to reduce the amount of time coding simple components. This was then developed in 2019 to be used on different platforms and applications, so far I have been able to use Sygn for computer vision, complex pathing and performance analysis. This year also introduced me to iOS/Android app development, through the Ecoceipt project. For Ecocept I was able to create a windows application communicating through a server (local or web based) to a phone app. This project also involved modifying a unique piece of hardware for NFC communication between the phone and PC.      
-                            </p>
-                        </div>
-                        <img src="./Resources/Sygn.png" class="projectimage"/>
-                        <div class="content" style="margin-left: -10px;">
-                            <p style="font-weight: bold; padding-top: 20px;">Work experience</p>
-                            <p style="margin-bottom: 0px;">
-                                As in the year to come, I began the year by working for NZ Uniforms as a storehand over the summer holidays. Being in my first year of university I did not focus on finding additional work throughout the year.                            
-                            </p>    
-                        </div>
-                    </div>
-                </div>
-            </div>       
-        </div>
+         <path class="birds-dark"  d="M 204, 327  v 12  l  23, -24  Z"/>
+         <path class="birds-light" d="M 204, 327  v 12  l -23, -24  Z"/>
 
-        <script>
-            var slideIndex = 0;
-            showSlides();
-            
-            function showSlides() {
-                var i;
-                var slides = document.getElementsByClassName("slides");
-                for (i = 0; i < slides.length; i++) { slides[i].style.display = "none"; }
-                slideIndex++;
-                if (slideIndex > slides.length) { slideIndex = 1 }  
-                slides[slideIndex-1].style.display = "block";  
-                setTimeout(showSlides, 6000); 
-            }
-        </script>
+         <path class="birds-dark"  d="M 1186, 251  v 12  l  23, -24  Z"/>
+         <path class="birds-light" d="M 1186, 251  v 12  l -23, -24  Z"/>
 
-    </body>
+         <path class="birds-dark"  d="M 1210, 292  v 12  l  23, -24  Z"/>
+         <path class="birds-light" d="M 1210, 292  v 12  l -23, -24  Z"/>
+
+         <path class="birds-dark"  d="M 1243, 260  v 12  l  23, -24  Z"/>
+         <path class="birds-light" d="M 1243, 260  v 12  l -23, -24  Z"/>
+      </svg>
+      <svg>
+         <path fill="url('#cloud')"  d="M  95,  99  a 33,33,0,1,1,-32,33a33,33,0,0,1,32,-33zm180,0a33,33,0,1,1,-33,33a33,33,0,0,1,34,-33zm-138,-30a33,33,0,1,1,-33,33a33,33,0,0,1,33,-33zm92,-3a33,33,0,1,1,-32,33a33,33,0,0,1,32,-33zm-43,-11a33,33,0,1,1,-33,33a33,33,0,0,1,33,-33zm-91,57h181v53h-181v-53z"/>
+         <path fill="url('#cloud')"  d="M 318, 284  a33,33,0,1,1,-32,33a33,33,0,0,1,32,-33zm180,0a33,33,0,1,1,-33,33a33,33,0,0,1,34,-33zm-138,-30a33,33,0,1,1,-33,33a33,33,0,0,1,33,-33zm92,-3a33,33,0,1,1,-32,33a33,33,0,0,1,32,-33zm-43,-11a33,33,0,1,1,-33,33a33,33,0,0,1,33,-33zm-91,57h181v53h-181v-53z"/>
+         <path fill="url('#cloud')"  d="M 800, 230  a33,33,0,1,1,-32,33a33,33,0,0,1,32,-33zm180,0a33,33,0,1,1,-33,33a33,33,0,0,1,34,-33zm-138,-30a33,33,0,1,1,-33,33a33,33,0,0,1,33,-33zm92,-3a33,33,0,1,1,-32,33a33,33,0,0,1,32,-33zm-43,-11a33,33,0,1,1,-33,33a33,33,0,0,1,33,-33zm-91,57h181v53h-181v-53z"/>
+         <path fill="url('#cloud')"  d="M 1100, 110  a33,33,0,1,1,-32,33a33,33,0,0,1,32,-33zm180,0a33,33,0,1,1,-33,33a33,33,0,0,1,34,-33zm-138,-30a33,33,0,1,1,-33,33a33,33,0,0,1,33,-33zm92,-3a33,33,0,1,1,-32,33a33,33,0,0,1,32,-33zm-43,-11a33,33,0,1,1,-33,33a33,33,0,0,1,33,-33zm-91,57h181v53h-181v-53z"/>
+      </svg>
+      <svg>
+         <circle class="sun-outer"  cx="775" cy="600" r="130"/>
+         <circle class="sun-middle" cx="775" cy="600" r="160"/>
+         <circle class="sun-inner"  cx="775" cy="600" r="100"/>
+       </svg>
+      <svg>
+         <path class="mountian-light" d="M 658, 478  L 841, 769  H 658   V 478  Z"/>
+         <path class="mountian-dark"  d="M 658, 478  L 475, 769  H 658   V 478  Z"/>
+      </svg>
+      <svg>
+         <path class="mountian-light" d="M 352, 457  L 683, 771          H 352  V 457  Z"/>
+         <path class="mountian-dark"  d="M 352, 457  L  20, 771          H 352  V 457  Z"/>
+         <path fill="url('#cloud')"   d="M 352, 457  l  61,  58, -61, 5  V 457  Z 
+                                         M 352, 457  l -61,  58,  61, 5  V 457  Z"/>
+      </svg>
+      <svg>
+         <path class="mountian-light" d="M 962, 384  l 328, 383          H 962  V 384  Z"/>
+         <path class="mountian-dark"  d="M 962, 384  L 634, 768          H 962  V 384  Z"/>
+         <path fill="url('#cloud')"   d="M 962, 384  l  72, 84, -72, 14  V 384  Z
+                                         M 962, 384  l -72, 84,  72, 14  V 384  Z"/>
+      </svg>
+      <svg>
+         <path class="mountian-light" d="M  80, 518  L 261, 771          H 80   V 518  Z"/>
+         <path class="mountian-dark"  d="M  80, 518  L-100, 771          H 80   V 518  Z"/>
+      </svg>
+      <svg>
+         <path class="mountian-light" d="M1278, 478  l 480, 383          H1278  V 478  Z"/>
+         <path class="mountian-dark"  d="M1278, 478  L 798, 861          h 480  V 478  Z"/>
+      </svg>
+   </svg>
+</body>
 </html>
