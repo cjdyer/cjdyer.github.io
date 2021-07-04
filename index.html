@@ -6,6 +6,16 @@
    <link rel="stylesheet" href="styles.css">
    <meta name="description" content="Put desc here">
    <title>Doc</title>
+
+   <script>
+      function myFunction() { 
+         document.getElementById("title").style.display="none"; 
+         document.getElementById("arrowLeft").style.display="block"; 
+         document.getElementById("arrowRight").style.display="block"; 
+         document.getElementById("arrowTop").style.display="block"; 
+         document.getElementById("arrowBottom").style.display="block"; 
+      }
+   </script>
 </head>
 
 <body>
@@ -45,7 +55,7 @@
          <circle class="sun-outer"  cx="775" cy="600" r="130"/>
          <circle class="sun-middle" cx="775" cy="600" r="160"/>
          <circle class="sun-inner"  cx="775" cy="600" r="100"/>
-       </svg>
+      </svg>
       <svg>
          <path class="mountian-light" d="M 658, 478  L 841, 769  H 658   V 478  Z"/>
          <path class="mountian-dark"  d="M 658, 478  L 475, 769  H 658   V 478  Z"/>
@@ -72,9 +82,49 @@
       </svg>
    </svg>
 
-   <div class="centered">
-      <h1>Hi!</h1>
+   <div class="left" id="arrowLeft">
+      <div>
+         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 16">
+            <path class="arrow" d="M 0 8 l 8 -8 v 4 l -2 2 h 8 v 4 h -8 l 2 2 v 4 Z"/>
+         </svg>
+         <h3>Robotics</h3>
+      </div>
    </div>
+
+   <div class="right" id="arrowRight">
+      <div>
+         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 16">
+            <path class="arrow" d="M 14 8 l -8 -8 v 4 l 2 2 h -8 v 4 h 8 l -2 2 v 4 Z"/>
+         </svg>
+         <h3>Projects</h3>
+      </div>
+   </div>
+
+   <div class="top" id="arrowTop">
+      <div>
+         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 14">
+            <path class="arrow" d="M 8 0 l 8 8 h -4 l -2 -2 v 8 h -4 v -8 l -2 2 h -4 Z"/>
+         </svg>
+         <h3>Code</h3>
+      </div>
+   </div>
+
+   <div class="bottom" id="arrowBottom">
+      <div>
+         <h3>Info</h3>
+         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 14">
+            <path class="arrow" d="M 8 14 l 8 -8 h -4 l -2 2 v -8 h -4 v 8 l -2 -2 h -4 Z"/>
+         </svg>
+      </div>
+   </div>
+
+   <div id="title" class="centered" onclick="myFunction()" href="#">
+      <h1>Hi!</h1>
+      <h2>This is the interactive CV of Cory Dyer</h2>
+      <h3>(click to continue)</h3>
+   </div>
+
+   
 
    <!-- <div class="content-container">
       <p class="content">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum minima quae quaerat doloremque vel, natus reprehenderit blanditiis molestiae beatae modi officiis enim deleniti, quibusdam asperiores ullam corrupti harum quod inventore.</p>
