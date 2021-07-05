@@ -1,14 +1,82 @@
+:root {
+    --sun-inner: #ffdf90;
+    --sun-middle: #ffc63780;
+    --sun-outer: #ffd46680;
+
+    --green-dark: #61ab36;
+    --green-light: #7ac74f;
+
+    --grey-dark: #555;
+    --grey-light: #707070;
+
+    --blue-dark: #00aff5;
+    --blue-light: #70d6ff;
+
+    --brown-dark: #2d1b10;
+    --brown-light: #4b2d1d;
+}
+
+.arrow {
+    position:absolute;
+    margin:0;
+	text-align: center; 
+	filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, 0.7));
+}
+
+#arrowLeft {
+    top:50%;
+    left:2%;   
+	transform: translateY(-50%);
+	cursor: pointer;
+}
+
+#arrowRight {
+    top:50%;
+    right:2%;
+	transform: translateY(-50%);
+	cursor: pointer;
+	direction: rtl;
+}
+#arrowRight>svg { transform: rotate(180deg); }
+
+#arrowTop {
+    top:2%;
+    left:50%;
+	cursor: pointer;
+	transform: translateX(-50%);
+}
+#arrowTop>svg { transform: rotate(90deg); }
+
+#arrowBottom {
+    bottom:2%;
+	cursor: pointer;
+    left:50%;
+	transform: translateX(-50%);
+}
+#arrowBottom>svg { transform: rotate(270deg); }
+
+#arrow-container {
+    position:relative;
+    height:100vh;
+    width:100vw;
+	margin: 0;
+}
+
+#arrow-container>div>svg {
+	width:4vw;
+    min-width: 50px;
+}
+
 @keyframes changecolour { to { background-color: var(--blue-dark); } }
 
-h1 { font-size: 8vh; } 
-h2, p { font-size: 4vh; }
-h3 { font-size: 3vh; } 
+h1 { font-size: 8vh; color: #333; } 
+h2 { font-size: 4vh; color: #333; }
+h3 { font-size: 3vh; color: #fff; } 
 
-h1, h2, h3, p {
+h1, h2, h3 {
 	text-align: center;
 	font-family: Arial, Helvetica, sans-serif;
 	margin: 0;
-	color: #333;
 }
 
 html, body { margin:0; padding:0; overflow:hidden }

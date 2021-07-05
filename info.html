@@ -1,0 +1,55 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="_css/info.css">
+    <script src="_js/global.js"></script>
+    <script src="_js/info.js"></script>
+
+    <title>Info</title>
+</head>
+<body>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1366 768" class="background-container">
+        <defs>
+            <linearGradient id="arrow" x1="0" x2="0%" y1="0" y2="100%">
+               <stop offset="50%" stop-color="#ddd"/>
+               <stop offset="50%" stop-color="#fff"/>
+            </linearGradient>
+            <linearGradient id="cloud" x1="0" x2="100%" y1="0" y2="0">
+               <stop offset="50%" stop-color="#ddd"/>
+               <stop offset="50%" stop-color="#fff"/>
+            </linearGradient>
+        </defs>
+        <svg>
+            <path id="cloud1" class="cloud" fill="url('#cloud')"  d="M  95,  600  a 33,33,0,1,1,-32,33a33,33,0,0,1,32,-33zm180,0a33,33,0,1,1,-33,33a33,33,0,0,1,34,-33zm-138,-30a33,33,0,1,1,-33,33a33,33,0,0,1,33,-33zm92,-3a33,33,0,1,1,-32,33a33,33,0,0,1,32,-33zm-43,-11a33,33,0,1,1,-33,33a33,33,0,0,1,33,-33zm-91,57h181v53h-181v-53z"/>
+            <path id="cloud2" class="cloud" fill="url('#cloud')"  d="M 318, 784  a33,33,0,1,1,-32,33a33,33,0,0,1,32,-33zm180,0a33,33,0,1,1,-33,33a33,33,0,0,1,34,-33zm-138,-30a33,33,0,1,1,-33,33a33,33,0,0,1,33,-33zm92,-3a33,33,0,1,1,-32,33a33,33,0,0,1,32,-33zm-43,-11a33,33,0,1,1,-33,33a33,33,0,0,1,33,-33zm-91,57h181v53h-181v-53z"/>
+            <path id="cloud3" class="cloud" fill="url('#cloud')"  d="M 800, 730  a33,33,0,1,1,-32,33a33,33,0,0,1,32,-33zm180,0a33,33,0,1,1,-33,33a33,33,0,0,1,34,-33zm-138,-30a33,33,0,1,1,-33,33a33,33,0,0,1,33,-33zm92,-3a33,33,0,1,1,-32,33a33,33,0,0,1,32,-33zm-43,-11a33,33,0,1,1,-33,33a33,33,0,0,1,33,-33zm-91,57h181v53h-181v-53z"/>
+            <path id="cloud4" class="cloud" fill="url('#cloud')"  d="M 1100, 610  a33,33,0,1,1,-32,33a33,33,0,0,1,32,-33zm180,0a33,33,0,1,1,-33,33a33,33,0,0,1,34,-33zm-138,-30a33,33,0,1,1,-33,33a33,33,0,0,1,33,-33zm92,-3a33,33,0,1,1,-32,33a33,33,0,0,1,32,-33zm-43,-11a33,33,0,1,1,-33,33a33,33,0,0,1,33,-33zm-91,57h181v53h-181v-53z"/>
+         </svg>
+    </svg>
+
+    <div id="content-container">
+        <img src="resources/picture_of_self.jpg">
+        <p class="subtitle">
+            (pictured left)
+        </p>
+        <p class="content">
+            An extremely driven and creative individual. 
+            I am looking for an engineering internship over the 2021/2022 summer period, to finish the third year of my Mechatronics degree at Massey University. 
+            Highly proficient in problem solving and the engineering process, with several years experience in robotics. 
+            With knowledge of multiple coding languages, circuit design, CAD software and report writing. 
+            Having assisted in many volunteering projects along with scattered periods of work, 
+            I am committed to learning as much as possible and giving everything I have to any project, work or challenge I am given.
+        </p>
+    </div>
+
+    <div id="arrow-container">
+        <div id="arrowBottom" class="arrow" onclick="goToInteralLink('index.html')">
+           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 16">
+              <path fill="url('#arrow')"  d="M 0 8 l 8 -8 v 4 l -2 2 h 8 v 4 h -8 l 2 2 v 4 Z"/>
+           </svg>
+           <h3>Home</h3>
+        </div>
+    </div>
+</body>
+</html>

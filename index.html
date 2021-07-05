@@ -3,7 +3,11 @@
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1">
+
    <link rel="stylesheet" href="_css/index.css">
+   <script src="_js/global.js"></script>
+   <script src="_js/index.js"></script>
+
    <meta name="description" content="Home page">
    <title>Home</title>
 </head>
@@ -16,12 +20,12 @@
             <stop offset="50%" stop-color="#fff"/>
          </linearGradient>
          <linearGradient id="arrowAlt" x1="0" x2="0%" y1="0" y2="100%">
-            <stop offset="50%" stop-color="#555"/>
-            <stop offset="50%" stop-color="#707070"/>
+            <stop offset="50%" stop-color="#ddd"/>
+            <stop offset="50%" stop-color="#fff"/>
          </linearGradient>
          <linearGradient id="arrow" x1="0" x2="0%" y1="0" y2="100%">
-            <stop offset="50%" stop-color="#707070"/>
-            <stop offset="50%" stop-color="#555"/>
+            <stop offset="50%" stop-color="#fff"/>
+            <stop offset="50%" stop-color="#ddd"/>
          </linearGradient>
       </defs>
       <svg>
@@ -44,15 +48,15 @@
          <path class="birds-light" d="M 1243, 260  v 12  l -23, -24  Z"/>
       </svg>
       <svg>
-         <path id="cloud1" class="cloud" fill="url('#cloud')" x="0" y="0" d="M  95,  99  a 33,33,0,1,1,-32,33a33,33,0,0,1,32,-33zm180,0a33,33,0,1,1,-33,33a33,33,0,0,1,34,-33zm-138,-30a33,33,0,1,1,-33,33a33,33,0,0,1,33,-33zm92,-3a33,33,0,1,1,-32,33a33,33,0,0,1,32,-33zm-43,-11a33,33,0,1,1,-33,33a33,33,0,0,1,33,-33zm-91,57h181v53h-181v-53z"/>
+         <path id="cloud1" class="cloud" fill="url('#cloud')"  d="M  95,  99  a 33,33,0,1,1,-32,33a33,33,0,0,1,32,-33zm180,0a33,33,0,1,1,-33,33a33,33,0,0,1,34,-33zm-138,-30a33,33,0,1,1,-33,33a33,33,0,0,1,33,-33zm92,-3a33,33,0,1,1,-32,33a33,33,0,0,1,32,-33zm-43,-11a33,33,0,1,1,-33,33a33,33,0,0,1,33,-33zm-91,57h181v53h-181v-53z"/>
          <path id="cloud2" class="cloud" fill="url('#cloud')"  d="M 318, 284  a33,33,0,1,1,-32,33a33,33,0,0,1,32,-33zm180,0a33,33,0,1,1,-33,33a33,33,0,0,1,34,-33zm-138,-30a33,33,0,1,1,-33,33a33,33,0,0,1,33,-33zm92,-3a33,33,0,1,1,-32,33a33,33,0,0,1,32,-33zm-43,-11a33,33,0,1,1,-33,33a33,33,0,0,1,33,-33zm-91,57h181v53h-181v-53z"/>
          <path id="cloud3" class="cloud" fill="url('#cloud')"  d="M 800, 230  a33,33,0,1,1,-32,33a33,33,0,0,1,32,-33zm180,0a33,33,0,1,1,-33,33a33,33,0,0,1,34,-33zm-138,-30a33,33,0,1,1,-33,33a33,33,0,0,1,33,-33zm92,-3a33,33,0,1,1,-32,33a33,33,0,0,1,32,-33zm-43,-11a33,33,0,1,1,-33,33a33,33,0,0,1,33,-33zm-91,57h181v53h-181v-53z"/>
          <path id="cloud4" class="cloud" fill="url('#cloud')"  d="M 1100, 110  a33,33,0,1,1,-32,33a33,33,0,0,1,32,-33zm180,0a33,33,0,1,1,-33,33a33,33,0,0,1,34,-33zm-138,-30a33,33,0,1,1,-33,33a33,33,0,0,1,33,-33zm92,-3a33,33,0,1,1,-32,33a33,33,0,0,1,32,-33zm-43,-11a33,33,0,1,1,-33,33a33,33,0,0,1,33,-33zm-91,57h181v53h-181v-53z"/>
       </svg>
       <svg>
-         <circle class="sun-outer"  cx="775" cy="600" r="130"/>
-         <circle class="sun-middle" cx="775" cy="600" r="160"/>
-         <circle class="sun-inner"  cx="775" cy="600" r="100"/>
+         <circle id="sun-outer"  cx="775" cy="600" r="130"/>
+         <circle id="sun-middle" cx="775" cy="600" r="160"/>
+         <circle id="sun-inner"  cx="775" cy="600" r="100"/>
       </svg>
       <svg>
          <path class="mountain-light" d="M 658, 478  L 841, 769  H 658   V 478  Z"/>
@@ -81,25 +85,25 @@
    </svg>
 
    <div id="arrow-container">
-      <div id="arrowLeft" class="arrow">
+      <div id="arrowLeft" class="arrow" onclick="goToInteralLink('robotics.html')">
          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 16">
             <path fill="url('#arrow')"  d="M 0 8 l 8 -8 v 4 l -2 2 h 8 v 4 h -8 l 2 2 v 4 Z"/>
          </svg>
          <h3>Robotics</h3>
       </div>
 
-      <div id="arrowRight" class="arrow">
+      <div id="arrowRight" class="arrow" onclick="goToInteralLink('projects.html')">
          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 16">
             <path fill="url('#arrowAlt')" d="M 0 8 l 8 -8 v 4 l -2 2 h 8 v 4 h -8 l 2 2 v 4 Z"/>
          </svg>
          <h3>Projects</h3>
       </div>
 
-      <div id="arrowTop" class="arrow">
+      <div id="arrowTop" class="arrow" onclick="goToInteralLink('info.html')">
          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 16">
             <path fill="url('#arrow')" d="M 0 8 l 8 -8 v 4 l -2 2 h 8 v 4 h -8 l 2 2 v 4 Z"/>
          </svg>
-         <h3>Code</h3>
+         <h3>Info</h3>
       </div>
 
       <div id="arrowBottom" class="arrow" onclick="goToInteralLink('contact.html')">
@@ -110,12 +114,10 @@
       </div>
    </div>
 
-   <div id="title" class="centered" onclick="myFunction()" href="#">
+   <div id="title" class="centered" onclick="HideAfterClick()" href="#">
       <h1>Hi!</h1>
       <h2>This is the interactive CV of Cory Dyer</h2>
       <h3>(click to continue)</h3>
    </div>
-
-   <script src="script.js"></script>
 </body>
 </html>

@@ -2,8 +2,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Contact</title>
     <link rel="stylesheet" href="_css/contact.css">
+    <script src="_js/global.js"></script>
+    <script src="_js/contact.js"></script>
+
+    <title>Contact</title>
 </head>
 <body>
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1366 768" class="background-container">
@@ -31,6 +34,10 @@
                 <stop offset="50%" stop-color="#2d1b10"/>
                 <stop offset="75%" stop-color="#2d1b10"/>
                 <stop offset="75%" stop-color="#1D110B"/>
+            </linearGradient>
+            <linearGradient id="arrow" x1="0" x2="0%" y1="0" y2="100%">
+               <stop offset="50%" stop-color="#fff"/>
+               <stop offset="50%" stop-color="#ddd"/>
             </linearGradient>
         </defs>
         <svg>
@@ -61,7 +68,7 @@
             <path class="gem" fill="url('#ruby')"    d="M 900 150l19 3-16 7Zm-10-13 4 8 9 1-4-12Zm17-3 8 1 8 5-16 2Zm5 13 21 5 1-8Zm26-5-11 0-4-9 8 2Z"/>
         </svg>
     </svg>
-    <div class="content-container">
+    <div id="content-container">
         <p class="content">
             <strong>Email</strong>
             <br>
@@ -73,11 +80,28 @@
             022 309 9151
             <br>
             <br>
-            <strong>References</strong>
+            <strong>Work References</strong>
             <br>
-            027 406 0397 - Mark Graham - Zespri Technical Officer
+            <a href="mailto: Gina.Dow@nzuniforms.com">Gina.Dow@nzuniforms.com</a> - Gina Dow - NZ Uniforms Showroom Manager
             <br>
+            <a href="mailto: mark.graham@zespri.com">mark.graham@zespri.com</a> - Mark Graham (Often unavailable) - Zespri Technical Officer
+            <br>
+            <br>
+            <strong>Character References</strong>
+            <br>
+            <a href="mailto: dwessels@otc.school.nz">dwessels@otc.school.nz</a> - Deon Wessels - Otumoetai College Teacher
+            <br>
+            <a href="mailto: ptderijk3@gmail.com">ptderijk3@gmail.com</a> - Toni de Rijk - House of Science Robotics
         </p>
     </div>
+
+    <div id="arrow-container">
+        <div id="arrowTop" class="arrow" onclick="goToInteralLink('index.html')">
+           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 16">
+              <path fill="url('#arrow')" d="M 0 8 l 8 -8 v 4 l -2 2 h 8 v 4 h -8 l 2 2 v 4 Z"/>
+           </svg>
+           <h3>Code</h3>
+        </div>
+     </div>
 </body>
 </html>

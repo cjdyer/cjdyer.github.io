@@ -1,6 +1,4 @@
 @import "global.css";
-@import "colours.css";
-@import "index_svgs.css";
 
 .background-container {
 	position: fixed;
@@ -17,15 +15,7 @@
 }
 
 #arrow-container {
-    position:relative;
-    height:100vh;
-    width:100vw;
-	margin: 0;
 	display: none;
-}
-
-#arrow-container>div>svg {
-	width:4vw;
 }
 
 @keyframes slidein {
@@ -45,3 +35,53 @@ body {
 	animation-fill-mode: forwards;
 	animation-delay: 2s;
 }
+
+#sun-outer { fill: var(--sun-outer); }
+#sun-middle { fill: var(--sun-middle); }
+#sun-inner { fill: var(--sun-inner); }
+
+.birds-light { fill: var(--grey-light); }
+.birds-dark { fill: var(--grey-dark); }
+.mountain-dark { fill: var(--green-dark); }
+.mountain-light { fill: var(--green-light); }
+
+#sun-inner, #sun-outer, #sun-middle {
+    animation-name: slidein;
+	animation-duration: 4s;
+	animation-fill-mode: forwards;
+	animation-delay: 2s;
+}
+
+#cloud1 {
+	animation-delay: 5s;
+	animation-duration: 6.5s;
+	animation-name: move1;
+}
+
+#cloud2 {
+	animation-delay: 4s;
+	animation-duration: 6s;
+	animation-name: move2;
+}
+
+#cloud3 {
+	animation-delay: 4.5s;
+	animation-duration: 5.5s;
+	animation-name: move3;
+}
+
+#cloud4 {
+	animation-delay: 5.5s;
+	animation-duration: 7s;
+	animation-name: move4;
+}
+
+.cloud {
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in-out;
+}
+
+@keyframes move1 { 50%  { transform: translate(0%,  2%); } }
+@keyframes move2 { 50%  { transform: translate(0%,  -2%); } }
+@keyframes move3 { 50%  { transform: translate(0%,  1%); } }
+@keyframes move4 { 50%  { transform: translate(0%,  -1%); } }
