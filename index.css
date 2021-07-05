@@ -81,6 +81,8 @@ body {
 	animation-timing-function: ease-in-out;
 }
 
+#subtitle { color: #333; } 
+
 @keyframes move1 { 50%  { transform: translate(0%,  2%); } }
 @keyframes move2 { 50%  { transform: translate(0%,  -2%); } }
 @keyframes move3 { 50%  { transform: translate(0%,  1%); } }
