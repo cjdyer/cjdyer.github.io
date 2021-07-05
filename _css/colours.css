@@ -1,0 +1,17 @@
+:root {
+    --sun-inner: #ffdf90;
+    --sun-middle: #ffc63780;
+    --sun-outer: #ffd46680;
+
+    --green-dark: #61ab36;
+    --green-light: #7ac74f;
+
+    --grey-dark: #555;
+    --grey-light: #707070;
+
+    --blue-dark: #00aff5;
+    --blue-light: #70d6ff;
+
+    --brown-dark: #2d1b10;
+    --brown-light: #4b2d1d;
+}

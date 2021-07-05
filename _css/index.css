@@ -1,0 +1,47 @@
+@import "global.css";
+@import "colours.css";
+@import "index_svgs.css";
+
+.background-container {
+	position: fixed;
+	bottom:0px; left:0px; right:0px;
+}
+
+.centered {
+	position: fixed;
+	transform: translate(-50%, -50%);
+	top: 40vh;
+	left: 50vw;
+	animation-duration: 4s;
+	animation-name: fadein;
+}
+
+#arrow-container {
+    position:relative;
+    height:100vh;
+    width:100vw;
+	margin: 0;
+	display: none;
+}
+
+#arrow-container>div>svg {
+	width:4vw;
+}
+
+@keyframes slidein {
+	from { transform: translate(0%,  0%); }
+	to   { transform: translate(0%, 10%); }
+}
+
+@keyframes fadein {
+	from { opacity: 0%; }
+	to   { opacity: 100%; }
+}
+
+body {
+	background-color: var(--blue-light);
+	animation-name: changecolour;
+	animation-duration: 4s;
+	animation-fill-mode: forwards;
+	animation-delay: 2s;
+}
