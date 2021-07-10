@@ -6,7 +6,6 @@ window.onload = function () {
         document.getElementById("cloud2").style.animationDelay = "0s";
         document.getElementById("cloud3").style.animationDelay = "0s";
         document.getElementById("cloud4").style.animationDelay = "0s";
-        document.getElementById("cloud4").style.animationDelay = "0s";
     } 
     else {
         sessionStorage.indexView = true;

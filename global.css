@@ -1,7 +1,7 @@
 :root {
-    --sun-inner: #ffdf90;
-    --sun-middle: #ffc63780;
-    --sun-outer: #ffd46680;
+    --yellow-dark: #ffdf90;
+    --yellow-middle: #ffc63780;
+    --yellow-light: #ffd46680;
 
     --green-dark: #61ab36;
     --green-light: #7ac74f;
@@ -14,6 +14,9 @@
 
     --brown-dark: #2d1b10;
     --brown-light: #4b2d1d;
+
+    --white-dark: #ddd;
+    --white-light: #fff;
 }
 
 .arrow {

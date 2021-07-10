@@ -18,6 +18,8 @@
 	display: none;
 }
 
+#subtitle { color: #333; } 
+
 @keyframes slidein {
 	from { transform: translate(0%,  0%); }
 	to   { transform: translate(0%, 10%); }
@@ -35,15 +37,6 @@ body {
 	animation-fill-mode: forwards;
 	animation-delay: 2s;
 }
-
-#sun-outer { fill: var(--sun-outer); }
-#sun-middle { fill: var(--sun-middle); }
-#sun-inner { fill: var(--sun-inner); }
-
-.birds-light { fill: var(--grey-light); }
-.birds-dark { fill: var(--grey-dark); }
-.mountain-dark { fill: var(--green-dark); }
-.mountain-light { fill: var(--green-light); }
 
 #sun-inner, #sun-outer, #sun-middle {
     animation-name: slidein;
@@ -76,14 +69,25 @@ body {
 	animation-name: move4;
 }
 
-.cloud {
+#cloud1, #cloud2, #cloud3, #cloud4 {
 	animation-iteration-count: infinite;
 	animation-timing-function: ease-in-out;
 }
-
-#subtitle { color: #333; } 
 
 @keyframes move1 { 50%  { transform: translate(0%,  2%); } }
 @keyframes move2 { 50%  { transform: translate(0%,  -2%); } }
 @keyframes move3 { 50%  { transform: translate(0%,  1%); } }
 @keyframes move4 { 50%  { transform: translate(0%,  -1%); } }
+
+#bird1 {
+	animation-name: flap1;
+	animation-duration: 400ms;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in-out;
+}
+
+@keyframes flap1 {
+	from { d: path("M142 339l23-24-23 12-23-12Z") }
+	50%  { d: path("M142 339l23 1-23-13-23 13Z") }
+	to   { d: path("M142 339l23-24-23 12-23-12Z") }
+}
