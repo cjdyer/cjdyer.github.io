@@ -21,13 +21,13 @@
 #subtitle { color: #333; } 
 
 @keyframes slidein {
-	from { transform: translate(0%,  0%); }
-	to   { transform: translate(0%, 10%); }
+	from { transform: translate(0%,  0%) }
+	to   { transform: translate(0%, 10%) }
 }
 
 @keyframes fadein {
-	from { opacity: 0%; }
-	to   { opacity: 100%; }
+	from { opacity: 0% }
+	to   { opacity: 100% }
 }
 
 body {
@@ -45,19 +45,19 @@ body {
 	animation-delay: 2s;
 }
 
-#cloud1 {
+#cloud1, #bird1m {
 	animation-delay: 5s;
 	animation-duration: 6.5s;
 	animation-name: move1;
 }
 
-#cloud2 {
+#cloud2, #bird2m {
 	animation-delay: 4s;
 	animation-duration: 6s;
 	animation-name: move2;
 }
 
-#cloud3 {
+#cloud3, #bird3m {
 	animation-delay: 4.5s;
 	animation-duration: 5.5s;
 	animation-name: move3;
@@ -69,25 +69,63 @@ body {
 	animation-name: move4;
 }
 
-#cloud1, #cloud2, #cloud3, #cloud4 {
+#cloud1, #cloud2, #cloud3, #cloud4, #bird1m, #bird2m, #bird3m {
 	animation-iteration-count: infinite;
 	animation-timing-function: ease-in-out;
 }
 
-@keyframes move1 { 50%  { transform: translate(0%,  2%); } }
-@keyframes move2 { 50%  { transform: translate(0%,  -2%); } }
-@keyframes move3 { 50%  { transform: translate(0%,  1%); } }
-@keyframes move4 { 50%  { transform: translate(0%,  -1%); } }
+@keyframes move1 { 50%  { transform: translate(0%,  2%) } }
+@keyframes move2 { 50%  { transform: translate(0%,  -2%) } }
+@keyframes move3 { 50%  { transform: translate(0%,  1%) } }
+@keyframes move4 { 50%  { transform: translate(0%,  -1%) } }
 
 #bird1 {
 	animation-name: flap1;
 	animation-duration: 400ms;
+}
+
+#bird2 {
+	animation-name: flap2;
+	animation-duration: 460ms;
+}
+
+#bird3 {
+	animation-name: flap3;
+	animation-duration: 430ms;
+}
+
+#bird1, #bird2, #bird3 {
 	animation-iteration-count: infinite;
 	animation-timing-function: ease-in-out;
+}
+
+#birds-left {
+    animation-iteration-count:infinite; /* Change to not infinite */
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    animation-duration: 15s;
+    animation-name: move-birds;
 }
 
 @keyframes flap1 {
 	from { d: path("M142 339l23-24-23 12-23-12Z") }
 	50%  { d: path("M142 339l23 1-23-13-23 13Z") }
 	to   { d: path("M142 339l23-24-23 12-23-12Z") }
+}
+
+@keyframes flap2 {
+	from { d: path("M180 371l23-24-23 12-23-12Z") }
+	50%  { d: path("M180 371l23 1-23-13-23 13Z") }
+	to   { d: path("M180 371l23-24-23 12-23-12Z") }
+}
+
+@keyframes flap3 {
+	from { d: path("M204 339l23-24-23 12-23-12Z") }
+	50%  { d: path("M204 339l23 1-23-13-23 13Z") }
+	to   { d: path("M204 339l23-24-23 12-23-12Z") }
+}
+
+@keyframes move-birds {
+    from { transform: translate(-50%, 0%) }
+    to   { transform: translate(110%, 0%) }
 }
