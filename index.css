@@ -3,8 +3,6 @@
 .background-container {
 	position: fixed;
 	bottom:0px; left:0px; right:0px;
-	stroke-width: 1px;
-	stroke: #000;
 }
 
 .centered {
