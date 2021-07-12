@@ -81,6 +81,10 @@ svg {
 
 @keyframes changecolour { to { background-color: var(--blue-dark); } }
 
+a {
+    color: white;
+}
+
 h1 { font-size: 8vh; color: #333; } 
 h2 { font-size: 4vh; color: #333; }
 h3 { font-size: 3vh; color: #fff; } 
