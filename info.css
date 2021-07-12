@@ -132,7 +132,7 @@ h3 {
 	animation-iteration-count: 1;
     animation-fill-mode: forwards;
     animation-timing-function: linear;
-	animation-delay: 15s; /* 10s? */
+	animation-delay: 15s;
     animation-duration: 7s;
 	opacity: 0;
     animation-name: move-ship-dropping;
