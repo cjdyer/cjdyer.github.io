@@ -19,19 +19,60 @@
                <stop offset="50%" stop-color="#ddd"/>
                <stop offset="50%" stop-color="#fff"/>
             </linearGradient>
+            <linearGradient id="window" x1="0" x2="100%" y1="0" y2="0">
+                <stop offset="50%" stop-color="var(--blue-dark)"/>
+                <stop offset="50%" stop-color="var(--blue-light)"/>
+             </linearGradient>
+             <linearGradient id="rocket" x1="0" x2="100%" y1="0" y2="0">
+                <stop offset="50%" stop-color="var(--grey-dark)"/>
+                <stop offset="50%" stop-color="var(--grey-light)"/>
+             </linearGradient>
+             <linearGradient id="parachute" x1="0" x2="100%" y1="0" y2="0">
+                <stop offset="25%" stop-color="var(--red-dark)"/>
+                <stop offset="25%" stop-color="var(--white-light)"/>
+                <stop offset="50%" stop-color="var(--white-light)"/>
+                <stop offset="50%" stop-color="var(--red-dark)"/>
+                <stop offset="75%" stop-color="var(--red-dark)"/>
+                <stop offset="75%" stop-color="var(--white-light)"/>
+             </linearGradient>
         </defs>
         <svg>
-            <path id="cloud1" class="cloud" fill="url('#cloud')"  d="M  95,  600  a 33,33,0,1,1,-32,33a33,33,0,0,1,32,-33zm180,0a33,33,0,1,1,-33,33a33,33,0,0,1,34,-33zm-138,-30a33,33,0,1,1,-33,33a33,33,0,0,1,33,-33zm92,-3a33,33,0,1,1,-32,33a33,33,0,0,1,32,-33zm-43,-11a33,33,0,1,1,-33,33a33,33,0,0,1,33,-33zm-91,57h181v53h-181v-53z"/>
-            <path id="cloud2" class="cloud" fill="url('#cloud')"  d="M 318, 784  a33,33,0,1,1,-32,33a33,33,0,0,1,32,-33zm180,0a33,33,0,1,1,-33,33a33,33,0,0,1,34,-33zm-138,-30a33,33,0,1,1,-33,33a33,33,0,0,1,33,-33zm92,-3a33,33,0,1,1,-32,33a33,33,0,0,1,32,-33zm-43,-11a33,33,0,1,1,-33,33a33,33,0,0,1,33,-33zm-91,57h181v53h-181v-53z"/>
-            <path id="cloud3" class="cloud" fill="url('#cloud')"  d="M 800, 730  a33,33,0,1,1,-32,33a33,33,0,0,1,32,-33zm180,0a33,33,0,1,1,-33,33a33,33,0,0,1,34,-33zm-138,-30a33,33,0,1,1,-33,33a33,33,0,0,1,33,-33zm92,-3a33,33,0,1,1,-32,33a33,33,0,0,1,32,-33zm-43,-11a33,33,0,1,1,-33,33a33,33,0,0,1,33,-33zm-91,57h181v53h-181v-53z"/>
-            <path id="cloud4" class="cloud" fill="url('#cloud')"  d="M 1100, 610  a33,33,0,1,1,-32,33a33,33,0,0,1,32,-33zm180,0a33,33,0,1,1,-33,33a33,33,0,0,1,34,-33zm-138,-30a33,33,0,1,1,-33,33a33,33,0,0,1,33,-33zm92,-3a33,33,0,1,1,-32,33a33,33,0,0,1,32,-33zm-43,-11a33,33,0,1,1,-33,33a33,33,0,0,1,33,-33zm-91,57h181v53h-181v-53z"/>
+            <g id="cloud1" class="cloud">
+                <path fill="url('#cloud')" d="M105 650a34 34 0 010-68a34 34 0 0145-23a34 34 0 0156 0a34 34 0 0145 23a34 34 0 010 68Z"/>
+                <path fill="var(--white-light)" d="M105 650m-31-34a34 34 0 0131-31a1 1 0 010 3a34 34 0 00-28 28a1 1 0 01-3 0Z"/>
+            </g>
+            <g id="cloud2" class="cloud">
+                <path fill="url('#cloud')" d="M338 850a34 34 0 010-68a34 34 0 0145-23a34 34 0 0156 0a34 34 0 0145 23a34 34 0 010 68Z"/>
+                <path fill="var(--white-light)" d="M338 850m-31-34a34 34 0 0131-31a1 1 0 010 3a34 34 0 00-28 28a1 1 0 01-3 0Z"/>
+            </g>
+            <g id="cloud3" class="cloud">
+                <path fill="url('#cloud')" d="M830 770a34 34 0 010-68a34 34 0 0145-23a34 34 0 0156 0a34 34 0 0145 23a34 34 0 010 68Z"/>
+                <path fill="var(--white-light)" d="M830 770m-31-34a34 34 0 0131-31a1 1 0 010 3a34 34 0 00-28 28a1 1 0 01-3 0Z"/>
+            </g>
+            <g id="cloud4" class="cloud">
+                <path fill="url('#cloud')" d="M1130 670a34 34 0 010-68a34 34 0 0145-23a34 34 0 0156 0a34 34 0 0145 23a34 34 0 010 68Z"/>
+                <path fill="var(--white-light)" d="M1130 670m-31-34a34 34 0 0131-31a1 1 0 010 3a34 34 0 00-28 28a1 1 0 01-3 0Z"/>
+            </g>
         </svg>
         <svg>
-            <path id="plane" fill="var(--white-light)" d="M200 300h-176l-16-32h-16l8 56a16 16 90 0016 16h200a40 16 0 0040-8a56 32 0 00-56-32Z"/> <!-- Scale 4 -->
-            <path fill="var(--white-dark)" d="M200 300m-64 0-48-48h-24l16 48ZM200 300m-112 24-8 88h32l32-88Z"/>
-            <path fill="var(--blue-dark)" d="M200 300m-30 12v2a2 2 90 01-10 0v-2a2 2 90 0110 0ZM200 300m-48 12v2a2 2 90 01-10 0v-2a2 2 90 0110 0ZM200 300m-66 12v2a2 2 90 01-10 0v-2a2 2 90 0110 0ZM200 300m-84 12v2a2 2 90 01-10 0v-2a2 2 90 0110 0ZM200 300m-102 12v2a2 2 90 01-10 0v-2a2 2 90 0110 0ZM200 300m-120 12v2a2 2 90 01-10 0v-2a2 2 90 0110 0ZM200 300m-138 12v2a2 2 90 01-10 0v-2a2 2 90 0110 0ZM200 300m-156 12v2a2 2 90 01-10 0v-2a2 2 90 0110 0Z"/>
-            <path fill="var(--white-light)" d="M200 300m-208 0h-28v2h28ZM200 300m-206 24h-30v2h30ZM200 300m-206 12h-30v2h30ZM200 300m-210-12h-26v2h26Z"/>
-        </svg>  
+            <g id="ship-wobble">
+                <g id="ship">
+                    <path fill="url('#rocket')" d="M0 0v64h10l-4 8h20l-4-8h10v-64c0-8-8-24-16-24c-8 0-16 16-16 24Z"/> 
+                    <path fill="url('#window')"   d="M16 -8a8 8 90 000 16a8 8 90 000-16m0 24a8 8 90 000 16a8 8 90 000-16m0 24a8 8 90 000 16a8 8 90 000-16Z"/>
+                    <path fill="var(--red-light)"  d="M0 0m8 72c-8 16 0 16 8 40c8-24 16-24 8-40Z"/>
+                    <path fill="var(--yellow-middle)" d="M0 0m12 72c-5 15 0 16 4 32c4-16 9-17 4-32Z"/>
+                    <path fill="var(--yellow-dark)"   d="M0 0m15 72c-3 10 0 16 1 24c1-8 4-14 1-24Z"/>
+                </g>
+            </g>
+            <g id="ship-dropping-wobble">
+                <g id="ship-dropping">
+                    <path fill="url('#rocket')" d="M0 0v64h10l-4 8h20l-4-8h10v-64c0-8-8-24-16-24c-8 0-16 16-16 24Z"/> 
+                    <path fill="url('#window')"   d="M16 -8a8 8 90 000 16a8 8 90 000-16m0 24a8 8 90 000 16a8 8 90 000-16m0 24a8 8 90 000 16a8 8 90 000-16Z"/>
+                    <path fill="url('#parachute')"   d="M0 0m-14-67a1 1 0 0160 0Z"/>
+                    <path fill="var(--grey-dark)"   d="M0 0m16-24-30-43h2Zl30-43h-2Zl14-43h-2Zl-14-43h2Z"/>
+                </g>
+            </g>
+        </svg>
     </svg>
 
     <div id="content-container">
