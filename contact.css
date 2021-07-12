@@ -1,9 +1,5 @@
 @import "global.css";
 
-.gem {
-	filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, 0.7));
-}
-
 #content-container{
     width: 50%;
 	min-width: 300px;
@@ -48,6 +44,11 @@
 
 .content>strong {
 	font-size: 3vh;
+}
+
+a {
+    color: white;
+    z-index:2;
 }
 
 body {

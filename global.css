@@ -22,6 +22,11 @@
     --white-light: #fff;
 }
 
+svg {
+    stroke-width: 1px;
+    stroke: #000;
+}
+
 .arrow {
     position:absolute;
     margin:0;
@@ -71,6 +76,7 @@
 #arrow-container>div>svg {
 	width:4vw;
     min-width: 50px;
+    stroke-width: 0px;
 }
 
 @keyframes changecolour { to { background-color: var(--blue-dark); } }

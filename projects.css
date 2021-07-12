@@ -64,6 +64,6 @@ h3 {
 }
 
 @keyframes slidein {
-	from { transform: translate(-200%, 0%); }
+	from { transform: translate(200%, 0%); }
 	to   { transform: translate(0%, 0%); }
 }
