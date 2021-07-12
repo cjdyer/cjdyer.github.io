@@ -3,8 +3,6 @@
 .background-container {
 	position: fixed;
 	bottom:0px; left:0px; right:0px;
-	stroke-width: 1px;
-	stroke: #000;
 }
 
 .centered {
@@ -71,7 +69,7 @@ body {
 	animation-name: move4;
 }
 
-#cloud1, #cloud2, #cloud3, #cloud4, #bird1m, #bird2m, #bird3m {
+.cloud, .bird {
 	animation-iteration-count: infinite;
 	animation-timing-function: ease-in-out;
 }
@@ -96,7 +94,7 @@ body {
 	animation-duration: 430ms;
 }
 
-#bird1, #bird2, #bird3, #bird4, #bird5, #bird6 {
+.bird>path {
 	animation-iteration-count: infinite;
 	animation-timing-function: ease-in-out;
 }
