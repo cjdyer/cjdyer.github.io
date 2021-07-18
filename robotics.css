@@ -1,56 +1,5 @@
 @import "global.css";
 
-.gem {
-	filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, 0.7));
-}
-
-#content-container{
-    width: 50%;
-	min-width: 300px;
-	height: min-content;
-	background-color: #555;
-	
-	position: absolute;
-	top:0;
-	bottom: 0;
-	left: 0;
-	right: 0;
-  	
-	padding-top: 0.5%;
-	padding-right: 1.5%;
-	padding-left: 1.5%;
-	padding-bottom: 0.5%;
-
-	margin: auto;
-	text-align: center;
-
-	border: #333;
-	border-style: solid;
-	border-width: thick;
-
-	filter: drop-shadow(6px 6px 4px rgba(0, 0, 0, 0.7));
-
-	animation-duration: 2s;
-	animation-timing-function: ease-out;
-	animation-name: slidein;
-}
-
-.background-container {
-	position: fixed;
-	bottom:0px; left:0px; right:0px;
-}
-
-.content {
-	color: #fff;
-	text-align: justify;
-	font-size: 2vh;
-	font-family: Arial, Helvetica, sans-serif;
-}
-
-.content>strong {
-	font-size: 3vh;
-}
-
 img {
 	width: 50%;
 }
