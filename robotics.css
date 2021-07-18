@@ -1,11 +1,21 @@
 @import "global.css";
 
+#hide-text {
+    text-align: center;
+    cursor: pointer;
+}
+
 img {
+    margin-top: 1vh;
 	width: 50%;
 }
 
 body {
-	background-color: var(--blue-light);
+	background-color: #d57954;
+}
+
+svg {
+    stroke-width: 0px;
 }
 
 h3 {

@@ -6,3 +6,7 @@ window.onload = function () {
         sessionStorage.roboticsView = true;
     }
 };
+
+function hide() {
+    document.getElementById("content-container").style.display="none"; 
+}
