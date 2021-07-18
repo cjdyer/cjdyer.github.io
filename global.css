@@ -22,6 +22,54 @@
     --white-light: #fff;
 }
 
+#content-container{
+    max-height: 50vh;
+    width: 50vw;
+	height: min-content;
+	background-color: #555;
+	
+	position: absolute;
+	top:0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+  	
+	padding: 1%;
+
+	margin: auto;
+	text-align: center;
+
+	border: #333;
+	border-style: solid;
+	border-width: thick;
+
+	filter: drop-shadow(6px 6px 4px rgba(0, 0, 0, 0.7));
+
+	animation-duration: 2s;
+	animation-timing-function: ease-out;
+	animation-name: slidein;
+
+    overflow: auto;
+}
+
+.background-container {
+	position: fixed;
+	bottom:0px; left:0px; right:0px;
+}
+
+.content {
+	color: #fff;
+	text-align: justify;
+	font-size: 2vh;
+    margin: 0;
+    margin-top: 2vh;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.content>strong {
+	font-size: 3vh;
+}
+
 svg {
     stroke-width: 1px;
     stroke: #000;
@@ -67,19 +115,21 @@ svg {
 #arrowBottom>svg { transform: rotate(270deg); }
 
 #arrow-container {
-    position:relative;
-    height:100vh;
-    width:100vw;
+    position:absolute;
+    height:100%;
+    width:100%;
 	margin: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
 }
 
 #arrow-container>div>svg {
 	width:4vw;
-    min-width: 50px;
+    min-width: 30px;
     stroke-width: 0px;
 }
-
-@keyframes changecolour { to { background-color: var(--blue-dark); } }
 
 a {
     color: white;

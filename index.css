@@ -1,10 +1,5 @@
 @import "global.css";
 
-.background-container {
-	position: fixed;
-	bottom:0px; left:0px; right:0px;
-}
-
 .centered {
 	position: fixed;
 	transform: translate(-50%, -50%);
@@ -18,7 +13,7 @@
 	display: none;
 }
 
-#subtitle { color: #333; } 
+#subtitle { color: #333; }  
 
 @keyframes slidein {
 	from { transform: translate(0%,  0%) }
