@@ -1,143 +1,276 @@
 <!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1">
-
-   <link rel="stylesheet" href="index.css">
-   <script src="global.js"></script>
-   <script src="index.js"></script>
-
-   <meta name="description" content="Home page">
-   <title>Home</title>
+    <title>Cory Dyer</title>
+    <meta charset="utf-8">
+    <meta name="robots" content="noindex">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="shortcut icon" href="img/favicon.png">
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface%7CArapey&amp;subset=latin-ext" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/plugins.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
 </head>
 
 <body>
-   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1366 768" class="background-container">
-      <defs>
-         <linearGradient id="cloud" x1="0" x2="100%" y1="0" y2="0">
-            <stop offset="50%" stop-color="var(--white-dark)"/>
-            <stop offset="50%" stop-color="var(--white-light)"/>
-         </linearGradient>
-         <linearGradient id="arrowAlt" x1="0" x2="0%" y1="0" y2="100%">
-            <stop offset="50%" stop-color="var(--white-dark)"/>
-            <stop offset="50%" stop-color="var(--white-light)"/>
-         </linearGradient>
-         <linearGradient id="arrow" x1="0" x2="0%" y1="0" y2="100%">
-            <stop offset="50%" stop-color="var(--white-light)"/>
-            <stop offset="50%" stop-color="var(--white-dark)"/>
-         </linearGradient>
-         <linearGradient id="mountain" x1="0" x2="100%" y1="0" y2="0%">
-            <stop offset="50%" stop-color="var(--green-dark)"/>
-            <stop offset="50%" stop-color="var(--green-light)"/>
-         </linearGradient>
-         <linearGradient id="bird" x1="0" x2="100%" y1="0" y2="0%">
-            <stop offset="50%" stop-color="var(--grey-dark)"/>
-            <stop offset="50%" stop-color="var(--grey-light)"/>
-         </linearGradient>
-      </defs>
-      <!-- Birds -->
-      <svg>
-        <!-- Left -->
-         <g id="birds-left">
-            <g id="bird1-group" class="bird">
-               <path id="bird1" fill="url('#bird')"/>
-            </g>
-            <g id="bird2-group" class="bird">
-               <path id="bird2" fill="url('#bird')"/>
-            </g>
-            <g id="bird3-group"class="bird">
-               <path id="bird3" fill="url('#bird')"/>
-            </g>
-         </g>
-        <!-- Right -->
-         <g id="birds-right">
-            <g id="bird4-group" class="bird">
-               <path id="bird4" fill="url('#bird')"/>
-            </g>
-            <g id="bird5-group" class="bird">
-               <path id="bird5" fill="url('#bird')"/>
-            </g>
-            <g id="bird6-group" class="bird">
-               <path id="bird6" fill="url('#bird')"/>
-            </g>
-         </g>
-     </svg>
-      <!-- Clouds -->
-      <svg>
-         <g id="cloud1" class="cloud">
-            <path fill="url('#cloud')" d="M100 220a34 34 0 010-68a34 34 0 0145-23a34 34 0 0156 0a34 34 0 0145 23a34 34 0 010 68Z"/>
-            <path fill="var(--white-light)" d="M100 220m-31-34a34 34 0 0131-31a1 1 0 010 3a34 34 0 00-28 28a1 1 0 01-3 0Z"/>
-         </g>
-         <g id="cloud2" class="cloud">
-            <path fill="url('#cloud')" d="M320 350a34 34 0 010-68a34 34 0 0145-23a34 34 0 0156 0a34 34 0 0145 23a34 34 0 010 68Z"/>
-            <path fill="var(--white-light)" d="M320 350m-31-34a34 34 0 0131-31a1 1 0 010 3a34 34 0 00-28 28a1 1 0 01-3 0Z"/>
-         </g>
-         <g id="cloud3" class="cloud">
-            <path fill="url('#cloud')" d="M800 330a34 34 0 010-68a34 34 0 0145-23a34 34 0 0156 0a34 34 0 0145 23a34 34 0 010 68Z"/>
-            <path fill="var(--white-light)" d="M800 330m-31-34a34 34 0 0131-31a1 1 0 010 3a34 34 0 00-28 28a1 1 0 01-3 0Z"/>
-         </g>
-         <g id="cloud4" class="cloud">
-            <path fill="url('#cloud')" d="M1100 300a34 34 0 010-68a34 34 0 0145-23a34 34 0 0156 0a34 34 0 0145 23a34 34 0 010 68Z"/>
-            <path fill="var(--white-light)" d="M1100 300m-31-34a34 34 0 0131-31a1 1 0 010 3a34 34 0 00-28 28a1 1 0 01-3 0Z"/>
-         </g>
-      </svg>
-      <!-- Sun -->
-      <svg>
-         <circle fill="var(--yellow-light)" id="sun-outer"  cx="775" cy="600" r="130"/>
-         <circle fill="var(--yellow-middle)" id="sun-middle" cx="775" cy="600" r="160"/>
-         <circle fill="var(--yellow-dark)" id="sun-inner"  cx="775" cy="600" r="100"/>
-      </svg>
-      <!-- Mountains -->
-      <svg>
-         <path fill="url('#mountain')" d="M658 478l183 291h-366Z"/>
+    <div class="preloader">
+        <div class="spinner"></div>
+    </div>  
 
-         <path fill="url('#mountain')" d="M352 457l331 314h-662Z"/>
-         <path fill="url('#cloud')"    d="M352 457l57 54l-57 5l-57-5Z"/>
+    <div class="image-container">
+        <div class="background-img"></div>
+    </div>
 
-         <path fill="url('#mountain')" d="M962 384l328 383h-656Z"/>
-         <path fill="url('#cloud')"    d="M962 384l72 84l-72 14l-72-14Z"/>
+    <div class="content-area">
+        <div class="content-area-inner">
+            <section id="intro">
+                <div class="container-mid">
+                    <div class="animation-container animation-fade-down" data-animation-delay="0">
+                        <h1>Cory Dyer,</h1>
+                    </div>
 
-         <path fill="url('#mountain')" d="M80 518l181 253h-362Z"/>
-         
-         <path fill="url('#mountain')" d="M1278 478l480 383h-960Z"/>
-      </svg>
-   </svg>
+                    <div class="animation-container animation-fade-left" data-animation-delay="300">
+                        <p class="subline">
+                            An extremely driven and creative individual. Looking for an engineering internship over the 2021 summer period, 
+                            to begin the fourth year of a Mechatronics degree at Massey University. Highly proficient in problem solving and the 
+                            engineering process, with several years' experience in robotics. With knowledge of multiple coding languages, CAD 
+                            software and report writing. Committed to learning as much as possible and giving everything to any project, work 
+                            or challenge given.
+                        </p>
+                    </div>
 
-   <div id="arrow-container">
-      <div id="arrowLeft" class="arrow" onclick="goToInteralLink('robotics.html')">
-         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 16">
-            <path fill="url('#arrow')"  d="M 0 8 l 8 -8 v 4 l -2 2 h 8 v 4 h -8 l 2 2 v 4 Z"/>
-         </svg>
-         <h3>Robotics</h3>
-      </div>
+                    <div class="animation-container animation-fade-up" data-animation-delay="600">
+                        <a href="#about" class="smooth-scroll">
+                            Learn More
+                            <i class="fa fa-angle-down" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+            </section>
 
-      <div id="arrowRight" class="arrow" onclick="goToInteralLink('projects.html')">
-         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 16">
-            <path fill="url('#arrowAlt')" d="M 0 8 l 8 -8 v 4 l -2 2 h 8 v 4 h -8 l 2 2 v 4 Z"/>
-         </svg>
-         <h3>Projects</h3>
-      </div>
+            <section id="service">
+                <h3 class="headline scroll-animated-from-right">My Skills.</h3>
+                <ul class="services-list">
+                    <li class="scroll-animated-from-right">
+                        <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+                        Innovation
+                    </li>
+                    <li class="scroll-animated-from-right">
+                        <i class="fa fa-handshake-o" aria-hidden="true"></i>
+                        Teamwork
+                    </li>
+                    <li class="scroll-animated-from-right">
+                        <i class="fa fa-cogs" aria-hidden="true"></i>
+                        Dedication
+                    </li>
+                    <li class="scroll-animated-from-right">
+                        <i class="fa fa-television" aria-hidden="true"></i>
+                        Software Design
+                    </li>
+                    <li class="scroll-animated-from-right">
+                        <i class="fa fa-wrench" aria-hidden="true"></i>
+                        Hardware Design
+                    </li>
+                </ul>
+            </section>
 
-      <div id="arrowTop" class="arrow" onclick="goToInteralLink('info.html')">
-         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 16">
-            <path fill="url('#arrow')" d="M 0 8 l 8 -8 v 4 l -2 2 h 8 v 4 h -8 l 2 2 v 4 Z"/>
-         </svg>
-         <h3>Info</h3>
-      </div>
+            <section id="about">
+                <h3 class="headline scroll-animated-from-right">My Background.</h3>
+                <p class="scroll-animated-from-right">
+                    Through competing in robotics for over 8 years I have developed many soft and hard skills. Most notably I have worked extensively in teams of all sizes,
+                    and backgrounds. Ranging from experts working together at the world championships or beginners holding a spanner for the first time. Furthermore, as a club
+                    leader of the Otumoetai Robotics club I was able to develop skills in conflict resolution and large project oversight.
+                </p>
+                <p class="scroll-animated-from-right">
+                    Additionally, robotics vastly improved my knowledge of software, hardware design and system integration. Allowing me to learn the C/C++ programming language,
+                    usage and creation of API software, and best practices regarding documentation and version control. In addition to this, I was able to develop strong mechanical
+                    fundamentals through building and iterating on designs. My communication of these ideas and processes was then refined by my volunteer work with The House of 
+                    Science (a science education group) and many local schools in Tauranga and Palmerston North.
+                </p>
+                <p class="scroll-animated-from-right">
+                    Finally, when competing in these events it is a high stress, high speed environment. This has instilled a strong sense of dedication and determination as pillars
+                    of my personality. If a solution is not immediately presented, I will get down to work by myself or with a team to find the best way forward.
+                </p>
+            </section>
 
-      <div id="arrowBottom" class="arrow" onclick="goToInteralLink('contact.html')">
-         <h3>Contact</h3>
-         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 16">
-            <path fill="url('#arrowAlt')" d="M 0 8 l 8 -8 v 4 l -2 2 h 8 v 4 h -8 l 2 2 v 4 Z"/>
-         </svg>
-      </div>
-   </div>
+            <section id="work">
+                <h3 class="headline scroll-animated-from-right">My Best Projects.</h3>
+                <div class="showcase">
+                    <div class="item scroll-animated-from-right">
+                        <a href="#" data-featherlight="#item-1-lightbox">
+                            <div class="info">
+                                <div class="container-mid">
+                                    <h5>Autonomous Robot</h5>
+                                    <p>A University Project</p>
+                                </div>
+                            </div>
 
-   <div id="title" class="centered" onclick="HideAfterClick()" href="#">
-      <h1>Hi!</h1>
-      <h2>This is the interactive CV of Cory Dyer</h2>
-      <h3 id="subtitle">(click to continue)</h3>
-   </div>
+                            <div class="background-image" style="background-image: url(img/work/item-1.jpg)"></div>
+                        </a>
+
+                        <div id="item-1-lightbox" class="work-lightbox">
+                            <img class="img-responsive lightbox-image" src="img/work/item-1-1.jpg" alt="image">
+                            <h3>Autonomous Robot</h3>
+                            <p class="subline">A University Project</p>
+                            <p class="lightbox-content">
+                                In the third year of my mechatronics degree, teams were presented with the problem
+                                of creating an autonomous robot to navigate a room. My team decided to use two 
+                                control boards, to achieve two goals. The first board, a Nucleo f303k8, was programmed 
+                                to communicate with the hardware directly, using a custom pure pursuit algorithm and 
+                                encoder/gyroscope odometery to position the robot. The second board, a Raspberry Pi,
+                                was programmed with a custom Real Time Operating System to receive data from a LiDAR
+                                and user (over Wi-Fi) to inform its overall path. The mother board (Raspberry Pi), is 
+                                in constant communication with daughter board to give movement instructions and verify
+                                position data with the absolute position, calculated from the LiDAR. This project also
+                                allowed me to create Windows and Android applications (C#), for the user to see the status 
+                                of the robot and give instructions.
+                            </p>
+                            <p class="subline">Code</p>
+                            <p class="lightbox-content">
+                                Daughter Board:<br>
+                                <a>https://github.com/cjdyer/Roomba-F303K8-Drive-Controller</a>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="item scroll-animated-from-right">
+                        <a href="#" data-featherlight="#item-2-lightbox">
+                            <div class="info">
+                                <div class="container-mid">
+                                    <h5>Coil Winding System</h5>
+                                    <p>University Product Design</p>
+                                </div>
+                            </div>
+
+                            <div class="background-image" style="background-image: url(img/work/item-2.png)"></div>
+                        </a>
+
+                        <div id="item-2-lightbox" class="work-lightbox">
+                            <img class="img-responsive lightbox-image" src="img/work/item-2-1.png" alt="image">
+                            <h3>Coil Winding</h3>
+                            <p class="subline">University Product Design</p>
+                            <p class="lightbox-content">
+                                In the second year of my mechatronics degree, teams were tasked with creating a
+                                coil winding system from scratch. My team decided to create an open bed model,
+                                to allow quick and easy prototyping or component replacement. This project required
+                                me to create a coil winding and serial communication program in C++ for use on a 
+                                STM32 FR446RE microcontroller. By using stepper motors and a tensioning system, 
+                                a simple velocity PID could be implemented to maintain the speed between the input
+                                and output coils. In addition, I created a windows application using C# for the user
+                                to interface with, focusing on an intuitive and easy layout. These settings would
+                                then be sent via UART serial to the microcontroller and applied.
+                            </p>
+                            <p class="subline">Code</p>
+                            <p class="lightbox-content">
+                                Microcontroller:<br>
+                                <a>https://github.com/cjdyer/Coil-Winder-Control-Board</a>
+                                <br>User Interface:<br>
+                                <a>https://github.com/cjdyer/Coil-Winder-User-Interface</a>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="item scroll-animated-from-right">
+                        <a href="#" data-featherlight="#item-3-lightbox">
+                            <div class="info">
+                                <div class="container-mid">
+                                    <h5>Kiwifruit Recognition for Zespri</h5>
+                                    <p>Internship Project</p>
+                                </div>
+                            </div>
+
+                            <div class="background-image" style="background-image: url(img/work/item-3.bmp)"></div>
+                        </a>
+
+                        <div id="item-3-lightbox" class="work-lightbox">
+                            <img class="img-responsive lightbox-image" src="img/work/item-3-1.jpg" alt="image">
+                            <h3>Kiwifruit Recognition for Zespri</h3>
+                            <p class="subline">Internship Project</p>
+                            <p class="lightbox-content">
+                                During the summer of 2020 I was able to work with Zespri to create a kiwifruit recognition
+                                system. Initially it was thought that artificial intelligence would be the best solution,
+                                this proved to be accurate in ideal situations, but failed under low light. A colour analysis
+                                algorithm would object permanence was then trialed to give better results in all cases tested.
+                                Finally, I created some C++ code to turn the Time-of-Flight camera data into a 3d model, which
+                                could then be analysed using a custom plugin for blender, which was then returned and matched
+                                back to the regular camera data for exact edge detection. This is then presented to the user
+                                in a C# application.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="item scroll-animated-from-right">
+                        <a href="#" data-featherlight="#item-4-lightbox">
+                            <div class="info">
+                                <div class="container-mid">
+                                    <h5>Vex Robotics</h5>
+                                    <p>Competing For Over 8 Years</p>
+                                </div>
+                            </div>
+
+                            <div class="background-image" style="background-image: url(img/work/item-4.jpg)"></div>
+                        </a>
+
+                        <div id="item-4-lightbox" class="work-lightbox">
+                            <img class="img-responsive lightbox-image" src="img/work/item-4-1.jpg" alt="image">
+                            <h3>Vex Robotics</h3>
+                            <p class="subline">Competing For Over 8 Years</p>
+                            <p class="lightbox-content">
+                                In my time competing I was able to make it to the world championships in America three times, after winning the national
+                                championships here in New Zealand against 70+ other teams for three consecutive years. At the world championships 
+                                the best we achieved was a semifinals elimination and a design notebook award (on separate years). At the national
+                                competition we received the design notebook award, an award for the best design process and documentation. The 
+                                following year we received the highest award possible, the excellence award, for the best overall team, design, 
+                                programming and design. 
+                                <br>
+                                2020 and 2021 have been the first years of being unable to compete in the Vex robotics competition (due to age). 
+                                Because of this I was able to put my full effort into mentoring teams and promoting robotics. During the 
+                                university year I can mentor teams in Palmerston North, most notably, Palmerston North Girls' High 
+                                School and St. Peters. To promote robotics in the region, I assist in running events, help teams and most 
+                                importantly talk to local parents and teachers in attendance. This mentoring also extended to teams in the
+                                Bay of Plenty region when home from university. I was also able to mentor teams in 2019, along with my own 
+                                club in years prior as the club leader.
+                            </p>
+                            <p class="subline">Code (Currently not maintained by myself)</p>
+                            <p class="lightbox-content">
+                                Robot:<br>
+                                <a>https://github.com/hazzery/2941A-TippingPoint</a>
+                                <br>Design Notebook (2018):<br>
+                                <a>https://docs.google.com/document/d/16_aSm6f0YmVJJF7Gtnbw23u26G7xl968/edit?usp=sharing&ouid=109424885984740909527&rtpof=true&sd=true</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="contact">
+                <h3 class="headline scroll-animated-from-right">Contact Me.</h3>
+                <ul class="contact-list">
+                    <li class="scroll-animated-from-right">
+                        <i class="fa fa-mobile" aria-hidden="true"></i>
+                        022 309 9151
+                    </li>
+                    <li class="scroll-animated-from-right">
+                        <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                        cjdyer0@mail.com
+                    </li>
+                </ul>
+
+                <form id="contact-form" action="php/contact.php" method="post">
+                    <input id="contact-form-name" type="text" name="name" class="form-control scroll-animated-from-right" placeholder="* Your Name">
+                    <input id="contact-form-email" type="text" name="email" class="form-control scroll-animated-from-right" placeholder="* Your Email">
+
+                    <div class="fhp-input"><input id="contact-form-company" type="text" name="company" class="form-control"></div>
+
+                    <textarea id="contact-form-message" name="message" class="form-control scroll-animated-from-right"placeholder="* Your Message"></textarea>
+                    <button type="submit" class="form-control scroll-animated-from-right">Send Mail</button>
+                    <div class="success-message">* The Email was Sent Successfully!</div>
+                </form>
+            </section>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="js/plugins.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>
