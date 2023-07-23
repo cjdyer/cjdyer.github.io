@@ -508,7 +508,7 @@ a:hover
 
 /*******************************************************************/
 
-#service .services-list
+#skills .skills-list
 {
     margin-bottom: 0;
     padding: 0;
@@ -516,13 +516,13 @@ a:hover
     list-style: none;
 }
 
-#service .services-list li
+#skills .skills-list li
 {
     font-size: 2.4rem;
     line-height: 3.4em;
 }
 
-#service .services-list li i
+#skills .skills-list li i
 {
     font-size: 2rem;
     line-height: 3em;
