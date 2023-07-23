@@ -640,6 +640,7 @@ a:hover {
 }
 
 .featherlight .featherlight-content .work-lightbox p.subline {
+    margin-top: 1em;
     margin-bottom: 1em;
 
     letter-spacing: .025em;
