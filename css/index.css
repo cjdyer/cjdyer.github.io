@@ -238,6 +238,10 @@ a:hover {
     margin-bottom: 1.2em;
 }
 
+.content-area .content-area-inner section p {
+    text-align: justify;
+}
+
 @media (max-width:1200px) {
     .content-area .content-area-inner {
         left: 0;
