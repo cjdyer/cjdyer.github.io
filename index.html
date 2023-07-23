@@ -109,122 +109,6 @@
                 <h3 class="headline scroll-animated-from-right">My Best Projects. (click for info)</h3>
                 <div class="showcase">
                     <div class="item scroll-animated-from-right">
-                        <a href="#" data-featherlight="#lightbox_auton_robot">
-                            <div class="info">
-                                <div class="container-mid">
-                                    <h5>Autonomous Robot</h5>
-                                    <p>A University Project</p>
-                                </div>
-                            </div>
-
-                            <div class="background-image"
-                                style="background-image: url(img/work/auton_robot_splash.jpg)"></div>
-                        </a>
-
-                        <div id="lightbox_auton_robot" class="work-lightbox">
-                            <img class="img-responsive lightbox-image" src="img/work/auton_robot_header.jpg"
-                                alt="image">
-                            <h3>Autonomous Robot</h3>
-                            <p class="subline">A University Project</p>
-                            <p class="lightbox-content">
-                                In 2021, as part of my degree, teams were presented with the problem of creating an
-                                autonomous robot to navigate a room. My team developed our solution in three parts: high
-                                level control of the robot and its path, direct control of the hardware and robot
-                                position, and a user interface where we could see the status of the robot and give
-                                instructions. High level control of the robot was achieved using a Raspberry Pi,
-                                programmed with a custom Real Time Operating System to receive data from a LiDAR and
-                                user input over Wi-Fi to inform its overall path. Direct control was done via a Nucleo
-                                f303k8 board, which was programmed using a custom pure pursuit algorithm and
-                                encoder/gyroscope odometry. The motherboard (Raspberry Pi), was in constant
-                                communication with the daughter board to give movement instructions and verify local
-                                position data with the global position. This project improved my coding skills in
-                                Assembly and C/C++, and gave me experience creating a user interface in C# for Windows
-                                and Android.
-                            </p>
-                            <p class="subline">Code</p>
-                            <p class="lightbox-content">
-                                Daughter Board:<br>
-                                <a>https://github.com/cjdyer/Roomba-F303K8-Drive-Controller</a>
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="item scroll-animated-from-right">
-                        <a href="#" data-featherlight="#lightbox_coil_winder">
-                            <div class="info">
-                                <div class="container-mid">
-                                    <h5>Coil Winding System</h5>
-                                    <p>University Product Design</p>
-                                </div>
-                            </div>
-
-                            <div class="background-image"
-                                style="background-image: url(img/work/coil_winder_splash.png)"></div>
-                        </a>
-
-                        <div id="lightbox_coil_winder" class="work-lightbox">
-                            <img class="img-responsive lightbox-image" src="img/work/coil_winder_header.png"
-                                alt="image">
-                            <h3>Coil Winding</h3>
-                            <p class="subline">University Product Design</p>
-                            <p class="lightbox-content">
-                                In 2020, as part of my degree, teams were tasked with creating a coil winding system
-                                from scratch. My team decided to create an open bed model, to allow quick and easy
-                                prototyping or component replacement. This project required me to create a coil winding
-                                and serial communication program in C++ for use on a STM32 FR446RE microcontroller. By
-                                using stepper motors and a tensioning system, we were able to implement a simple
-                                velocity PID to maintain the speed between the input and output coils. This allowed for
-                                accurate winding and improved system reliability. In addition, I created a windows
-                                application using C# for the user to interface with, focusing on an intuitive and easy
-                                layout. The user settings would then be sent via UART serial to the microcontroller and
-                                applied.
-                            </p>
-                            <p class="subline">Code</p>
-                            <p class="lightbox-content">
-                                Microcontroller:<br>
-                                <a>https://github.com/cjdyer/Coil-Winder-Control-Board</a>
-                                <br>User Interface:<br>
-                                <a>https://github.com/cjdyer/Coil-Winder-User-Interface</a>
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="item scroll-animated-from-right">
-                        <a href="#" data-featherlight="#lightbox_zespri">
-                            <div class="info">
-                                <div class="container-mid">
-                                    <h5>Kiwifruit Recognition for Zespri</h5>
-                                    <p>Internship Project</p>
-                                </div>
-                            </div>
-
-                            <div class="background-image" style="background-image: url(img/work/zespri_splash.bmp)">
-                            </div>
-                        </a>
-
-                        <div id="lightbox_zespri" class="work-lightbox">
-                            <img class="img-responsive lightbox-image" src="img/work/zespri_header.jpg" alt="image">
-                            <h3>Kiwifruit Recognition for Zespri</h3>
-                            <p class="subline">Internship Project</p>
-                            <p class="lightbox-content">
-                                In the summer of 2020, I had the opportunity to work at Zespri, where my main task
-                                involved developing a kiwifruit recognition system. Initially, we explored the potential
-                                of using artificial intelligence. However, it became evident early on that this approach
-                                worked well only in ideal lighting conditions, failing to perform adequately under
-                                low-light situations. To overcome this challenge, I implemented a colour analysis
-                                algorithm with an object permanence map, which significantly improved the results in all
-                                trial runs. Building on this success, I proceeded to develop C++ code that transformed
-                                Time-of-Flight camera data into a 3D model. This 3D model was further analysed using a
-                                custom plugin for Blender, allowing for precise edge detection. To ensure seamless
-                                integration, the 3D model data was then matched and combined with the regular camera
-                                data. Finally, to provide a user-friendly interface, I created a C# application to
-                                present the processed information to the end-users. This application allowed them to
-                                interact with and utilise the kiwifruit recognition system effectively.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="item scroll-animated-from-right">
                         <a href="#" data-featherlight="#lightbox_vex">
                             <div class="info">
                                 <div class="container-mid">
@@ -266,6 +150,122 @@
                                 <a>https://github.com/hazzery/2941A-TippingPoint</a>
                                 <br>Design Notebook (2018):<br>
                                 <a>https://docs.google.com/document/d/16_aSm6f0YmVJJF7Gtnbw23u26G7xl968/edit?usp=sharing&ouid=109424885984740909527&rtpof=true&sd=true</a>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="item scroll-animated-from-right">
+                        <a href="#" data-featherlight="#lightbox_auton_robot">
+                            <div class="info">
+                                <div class="container-mid">
+                                    <h5>Autonomous Robot</h5>
+                                    <p>A University Project</p>
+                                </div>
+                            </div>
+
+                            <div class="background-image"
+                                style="background-image: url(img/work/auton_robot_splash.jpg)"></div>
+                        </a>
+
+                        <div id="lightbox_auton_robot" class="work-lightbox">
+                            <img class="img-responsive lightbox-image" src="img/work/auton_robot_header.jpg"
+                                alt="image">
+                            <h3>Autonomous Robot</h3>
+                            <p class="subline">A University Project</p>
+                            <p class="lightbox-content">
+                                In 2021, as part of my degree, teams were presented with the problem of creating an
+                                autonomous robot to navigate a room. My team developed our solution in three parts: high
+                                level control of the robot and its path, direct control of the hardware and robot
+                                position, and a user interface where we could see the status of the robot and give
+                                instructions. High level control of the robot was achieved using a Raspberry Pi,
+                                programmed with a custom Real Time Operating System to receive data from a LiDAR and
+                                user input over Wi-Fi to inform its overall path. Direct control was done via a Nucleo
+                                f303k8 board, which was programmed using a custom pure pursuit algorithm and
+                                encoder/gyroscope odometry. The motherboard (Raspberry Pi), was in constant
+                                communication with the daughter board to give movement instructions and verify local
+                                position data with the global position. This project improved my coding skills in
+                                Assembly and C/C++, and gave me experience creating a user interface in C# for Windows
+                                and Android.
+                            </p>
+                            <p class="subline">Code</p>
+                            <p class="lightbox-content">
+                                Daughter Board:<br>
+                                <a>https://github.com/cjdyer/Roomba-F303K8-Drive-Controller</a>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="item scroll-animated-from-right">
+                        <a href="#" data-featherlight="#lightbox_zespri">
+                            <div class="info">
+                                <div class="container-mid">
+                                    <h5>Kiwifruit Recognition for Zespri</h5>
+                                    <p>Internship Project</p>
+                                </div>
+                            </div>
+
+                            <div class="background-image" style="background-image: url(img/work/zespri_splash.bmp)">
+                            </div>
+                        </a>
+
+                        <div id="lightbox_zespri" class="work-lightbox">
+                            <img class="img-responsive lightbox-image" src="img/work/zespri_header.jpg" alt="image">
+                            <h3>Kiwifruit Recognition for Zespri</h3>
+                            <p class="subline">Internship Project</p>
+                            <p class="lightbox-content">
+                                In the summer of 2020, I had the opportunity to work at Zespri, where my main task
+                                involved developing a kiwifruit recognition system. Initially, we explored the potential
+                                of using artificial intelligence. However, it became evident early on that this approach
+                                worked well only in ideal lighting conditions, failing to perform adequately under
+                                low-light situations. To overcome this challenge, I implemented a colour analysis
+                                algorithm with an object permanence map, which significantly improved the results in all
+                                trial runs. Building on this success, I proceeded to develop C++ code that transformed
+                                Time-of-Flight camera data into a 3D model. This 3D model was further analysed using a
+                                custom plugin for Blender, allowing for precise edge detection. To ensure seamless
+                                integration, the 3D model data was then matched and combined with the regular camera
+                                data. Finally, to provide a user-friendly interface, I created a C# application to
+                                present the processed information to the end-users. This application allowed them to
+                                interact with and utilise the kiwifruit recognition system effectively.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="item scroll-animated-from-right">
+                        <a href="#" data-featherlight="#lightbox_coil_winder">
+                            <div class="info">
+                                <div class="container-mid">
+                                    <h5>Coil Winding System</h5>
+                                    <p>University Product Design</p>
+                                </div>
+                            </div>
+
+                            <div class="background-image"
+                                style="background-image: url(img/work/coil_winder_splash.png)"></div>
+                        </a>
+
+                        <div id="lightbox_coil_winder" class="work-lightbox">
+                            <img class="img-responsive lightbox-image" src="img/work/coil_winder_header.png"
+                                alt="image">
+                            <h3>Coil Winding</h3>
+                            <p class="subline">University Product Design</p>
+                            <p class="lightbox-content">
+                                In 2020, as part of my degree, teams were tasked with creating a coil winding system
+                                from scratch. My team decided to create an open bed model, to allow quick and easy
+                                prototyping or component replacement. This project required me to create a coil winding
+                                and serial communication program in C++ for use on a STM32 FR446RE microcontroller. By
+                                using stepper motors and a tensioning system, we were able to implement a simple
+                                velocity PID to maintain the speed between the input and output coils. This allowed for
+                                accurate winding and improved system reliability. In addition, I created a windows
+                                application using C# for the user to interface with, focusing on an intuitive and easy
+                                layout. The user settings would then be sent via UART serial to the microcontroller and
+                                applied.
+                            </p>
+                            <p class="subline">Code</p>
+                            <p class="lightbox-content">
+                                Microcontroller:<br>
+                                <a>https://github.com/cjdyer/Coil-Winder-Control-Board</a>
+                                <br>User Interface:<br>
+                                <a>https://github.com/cjdyer/Coil-Winder-User-Interface</a>
                             </p>
                         </div>
                     </div>
