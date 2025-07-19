@@ -190,8 +190,9 @@ a:hover {
     -o-transition: opacity 1s ease;
     transition: opacity 1s ease;
 
-    background: url(../img/background.png);
+    background: url(../img/background.jpg);
     background-repeat: no-repeat;
+    background-position: bottom;
     background-size: cover;
 }
 
